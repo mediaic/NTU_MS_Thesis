@@ -1,0 +1,69 @@
+\documentclass[a4paper, 12pt, twoside, openright]{mythesis}
+
+\include{macros}
+\renewcommand{\baselinestretch}{1.5}
+
+%\hypersetup{
+%    colorlinks=true,       % false: boxed links; true: colored links
+%    linkcolor=blue,          % color of internal links
+%    citecolor=blue,        % color of links to bibliography
+%    filecolor=blue,      % color of file links
+%    urlcolor=blue           % color of external links
+%}
+
+%------------------------------------
+% Thesis boundary Setting
+%-------------------------------------
+
+\textwidth      = 137.0mm
+\textheight     = 224.0mm
+\topmargin      =  -3.0mm
+\headheight     =   7.0mm
+\headsep        =  10.0mm
+\footskip       =   8.0mm
+\oddsidemargin  =  10.6mm
+\evensidemargin =  10.6mm
+\hoffset = -0.2cm
+%\overfullrule=5pt%%
+
+\pagenumbering{roman}% \thispagestyle{myheadings}
+\setcounter{page}{1}
+%\thispagestyle{empty}
+
+\begin{document}
+\title{\textbf{Your Thesis Title}}
+
+
+\author{ \\  \\ \\
+{\it Your Name}\\
+{\it Advisor: Shao-Yi Chien} \\ \\ \\ \\  \\ \\
+{\it Graduate Institute of Electronics Engineering}\\
+{\it National Taiwan University} \\
+{\it Taipei, Taiwan}\\ }
+
+{\date{May 2018}}
+
+\maketitle
+
+\frontmatter
+\input{inc/0_abstract/abstract.tex}
+\tableofcontents
+\listoffigures
+\listoftables
+
+%------------------------------------
+% Thesis Body -- begin
+%------------------------------------
+
+\mainmatter
+
+\input{inc/1_introduction/introduction.tex}
+\input{inc/2_related_work/related_work.tex}
+
+%------------------------------------
+% Thesis Body -- end
+%------------------------------------
+
+\bibliographystyle{IEEEtran}
+\bibliography{thesis}
+\end{document}

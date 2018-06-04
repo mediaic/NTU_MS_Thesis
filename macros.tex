@@ -1,0 +1,172 @@
+\renewcommand{\baselinestretch}{1}       % for squeezing the draft into the page limit, do not use
+
+% Note
+% Use \textsc{Name} to separate images, videos, dataset names from the main texts.
+
+% =============================================================================
+% Commonly used packages
+% =============================================================================
+
+% For removing Package ifpdf Error
+%%%%%%\let\ifpdf\relax
+
+% For removing LaTeX Font Warning
+\usepackage{lmodern}
+
+% Add Reference in Contents
+\usepackage[nottoc]{tocbibind}
+
+% Figures
+%\usepackage{subcaption}
+\usepackage{float}
+%\usepackage[justification=raggedright]{caption}	% makes captions ragged right - thanks to Bryce Lobdell
+\usepackage{lscape} % Useful for wide tables or figures.
+\usepackage{makecell}
+\usepackage{sidecap}
+
+\graphicspath{{figures}{example}}
+
+% Algorithm
+\usepackage[lined,ruled,linesnumbered]{algorithm2e}
+\usepackage{algorithmic}
+
+% Table and list
+\usepackage{booktabs} % Publication quality tables
+\usepackage{multirow}
+\usepackage{rotating} % sideways
+\newcommand{\vergap}[1]{\renewcommand{\arraystretch}{#1}}
+\newcommand{\horgap}[1]{\setlength{\tabcolsep}{#1}}
+%\specialrule{width}{abovespace}{belowspace}
+\newcommand{\dtoprule}{\specialrule{2pt}{0pt}{2pt}}
+\newcommand{\dbottomrule}{\specialrule{2pt}{0pt}{\belowrulesep}}
+
+\usepackage{paralist}
+\usepackage{enumitem}
+
+% Math
+\usepackage{bm} % Make bold, italic math symbols
+\usepackage{epsfig} % for figures
+\usepackage{graphicx} % another package that works for figures
+\usepackage{times}
+%\usepackage{mathptmx}
+\usepackage{mathtools}
+\usepackage{textcomp, gensymb} % math symbol
+\usepackage{amssymb,amsmath,amsfonts} % Short math guide for LaTeX ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
+\usepackage{siunitx} % SI units
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\cp}[1]{\left[#1\right]_{\times}}
+
+% Fonts
+\usepackage{units}
+\usepackage{color}
+
+% Comments
+\usepackage{comment}
+
+% Hyperlinks
+\usepackage{url} % Hyphenation of URLs.
+\usepackage{xcolor}
+\usepackage[backref=page]{hyperref}
+\hypersetup{colorlinks,breaklinks,
+            urlcolor=[rgb]{0.918,0,0.545},
+            linkcolor=[rgb]{0.710,0.180,0.141},
+            citecolor=[rgb]{0,0.545,0.447}}
+\usepackage{bookmark}
+%\usepackage[pagebackref=true,breaklinks=true,colorlinks,bookmarks=false]{hyperref} % remove letterpaper=true,
+%
+\usepackage{slashbox}
+\usepackage{xspace}
+%\usepackage[table,caption=false]{xcolor}
+%\usepackage{setspace}
+
+% Better hyphenation
+\usepackage{microtype}
+
+% Appendix
+\usepackage[toc,page]{appendix}
+
+% =========================================
+% Useful macros
+% =========================================
+
+% Latin abbreviations
+\newcommand{\etal}{\textit{et al}.~} % ``and others'', ``and co-workers''
+\newcommand{\eg}{e.g.,~} % ``for example''
+\newcommand{\ie}{i.e.,~} % ``that is'', ``in other words''
+\newcommand{\suchthat}{\, \mid \,}
+
+% Math related
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator{\avg}{avg}
+\DeclareMathOperator{\Tr}{Tr}
+
+% Paragraph
+\let\originalparagraph\paragraph
+\renewcommand{\paragraph}[2][.]{\originalparagraph{#2#1}}
+
+% Consistent margin adjustment for paragraphs, figures, and sections
+\newlength\paramargin
+\newlength\figmargin
+\newlength\secmargin
+
+\setlength{\secmargin}{0.0mm}
+\setlength{\paramargin}{0.0mm}
+\setlength{\figmargin}{0.0mm}
+
+% References for figures, tables, equations, chapters, and sections
+\newcommand{\chref}[1]{Chapter~\ref{ch:#1}}
+\newcommand{\secref}[1]{Section~\ref{sec:#1}}
+\newcommand{\figref}[1]{Figure~\ref{fig:#1}}
+\newcommand{\tabref}[1]{Table~\ref{tab:#1}}
+\newcommand{\eqnref}[1]{\eqref{eq:#1}}
+\newcommand{\thmref}[1]{Theorem~\ref{#1}}
+\newcommand{\prgref}[1]{Program~\ref{#1}}
+\newcommand{\algref}[1]{Algorithm~\ref{#1}}
+\newcommand{\clmref}[1]{Claim~\ref{#1}}
+\newcommand{\lemref}[1]{Lemma~\ref{#1}}
+\newcommand{\ptyref}[1]{Property~\ref{#1}}
+
+% Comments
+\long\def\ignorethis#1{}
+\newcommand {\sychien}[1]{{\color{blue}\textbf{Po-Chen: }#1}\normalfont}
+\newcommand {\coauthorA}[1]{{\color{red}\textbf{Co-author A: }#1}\normalfont}
+\newcommand {\coauthorB}[1]{{\color{magenta}\textbf{Co-author B: }#1}\normalfont}
+\newcommand {\todo}{{\textbf{\color{red}[TO-DO]\_}}}
+\def\newtext#1{\textcolor{blue}{#1}}
+\def\modtext#1{\textcolor{red}{#1}}
+
+%\usepackage{ifthen}
+%\ifthenelse{\equal{\final}{1}}
+%{
+%  \renewcommand{\sychien}[1]{}
+%}
+%{}
+
+\newcommand{\tb}[1]{\textbf{#1}}
+\newcommand{\mb}[1]{\mathbf{#1}}
+\newcommand{\Paragraph}[1]{\noindent\textbf{#1}}
+
+\newcommand{\jbox}[2]{
+  \fbox{%
+  	\begin{minipage}{#1}%
+  		\hfill\vspace{#2}%
+  	\end{minipage}%
+  }
+}
+
+\newcommand{\jblock}[2]{%
+  \begin{minipage}[t]{#1}\vspace{0cm}\centering%
+  #2%
+  \end{minipage}%
+}
+	
+% Customized definition
+\newcommand{\Ic}{\mathcal{I}_{c}}
+\newcommand{\It}{\mathcal{I}_{t}}
+\newcommand{\Ot}{\mathcal{O}_{t}}
+\newcommand{\asin}{\mathrm{asin}}
+\newcommand{\acos}{\mathrm{acos}}
+\newcommand{\atan}{\mathrm{atan}}
+\newcommand{\atanT}{\mathrm{atan2}}
+\newcommand{\dotP}{\mathrm{dot}}
