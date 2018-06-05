@@ -37,8 +37,11 @@
 * 由於「[臺大電子學位論文上傳手冊](http://www.lib.ntu.edu.tw/doc/cl/etdsguide.pdf)」內提供之[校徽圖檔](http://www.lib.ntu.edu.tw/doc/CL/watermark.pdf)並非向量檔，且畫質低落，不符大眾美感。因此，我們另外找了[校徽向量檔](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/doc/National_Taiwan_University_logo_gray.pdf)，並已置於資料夾**doc**內。
 * 另外，為了提升畫面整理視覺舒適度，我們在校徽浮水印設定上也略與學校建議不同；然而本設定也已通過學校認可，請安心服用。
 
-以下示範如何透過使用**Adobe Acrobat Pro**插入浮水印。請注意，由於我們選擇不在中文頁以及英文封面頁插入浮水印，因此將（**雙面印刷**）浮水印起始頁設為11（若是**單面列印**則起始頁應為6）：
+以下示範如何透過使用**Adobe Acrobat Pro**插入校徽浮水印。首先，選擇右邊選單之**Watermark**：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/3_1.png)
+
+請注意，由於我們選擇不在**所有中文頁**以及**英文封面頁**插入浮水印，因此將（**雙面印刷**）浮水印起始頁設為11（若是**單面列印**則起始頁應為6）：
+![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/3_2.png)
 
 ### 數位物件識別碼
 
