@@ -8,7 +8,7 @@
 1. [保全設定](#保全設定)
 
 ### 簡介
-* 本文主要根據「[臺大電子學位論文上傳手冊](http://www.lib.ntu.edu.tw/doc/cl/etdsguide.pdf)」編訂而成。
+* 本文主要根據「[臺大電子學位論文上傳手冊](http://www.lib.ntu.edu.tw/doc/cl/etdsguide.pdf)」編訂而成。根據本文將所有步驟完成後，即可得到最終合格版之畢業論文（可參考此[論文](http://media.ee.ntu.edu.tw/personal/pcwu/research/phd_dissertation/pcwu_phd_dissertation.pdf)）。
 * 由於台大論文預設格式為Word，但以Word編輯論文實屬困難；這個Repository提供英文Latex的模板，另外加上幾份含有中文的Word檔以加在論文開頭數頁。版面設計同時根據「[臺大學位論文格式規範](http://www.lib.ntu.edu.tw/doc/cl/THESISSAMPLE.doc)」與一般大眾美學觀感進行調配，並且已通過台大圖書館審核，請安心服用。由於論文主體全為英文，因此並不需要在Latex相關軟體中加入中文語言包。等到所有檔案皆完成後，再透過相關軟體如**Adobe Acrobat Pro**將所有PDF檔合併在同一份即可。
 * **Adobe Acrobat Pro**可在**計中電腦教室**、**總圖書館**、**醫學院圖書館**內之電腦使用，或是連接至計中提供之[台大虛擬桌面](http://vdiqa.ntu.edu.tw/)使用。
 * 若作業系統為Windows，則建議使用軟體[MiKTeX](https://miktex.org/)編輯論文主體。（其他作業系統待補充）
@@ -46,10 +46,19 @@
 ### 數位物件識別碼
 * DOI 是數位物件辨識碼（Digital Object Identifier）的簡稱，為物件在網路上的唯一識別碼並可用於永久連結，可有效提昇學位論文的國際能見度及影響力。
 
-請先登入台大之「[電子學位論文服務系統](http://etds.lib.ntu.edu.tw/etdsystem/submit/submitLogin)」，並在**輸入論文基本資料**之網頁複製論文的DOI碼：
+請先登入台大之「[電子學位論文服務系統](http://etds.lib.ntu.edu.tw/etdsystem/submit/submitLogin)」，並在**輸入論文基本資料**之網頁**複製**論文的DOI碼：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/4_1.png)
 
-之後使用**Adobe Acrobat Pro**插入DOI碼。請注意，由於我們選擇不在**所有中文頁**以及**英文封面頁**插入DOI碼，因此將（**雙面印刷**）起始頁設為11（若是**單面列印**則起始頁應為6）：：
+之後使用**Adobe Acrobat Pro**插入DOI碼。請注意，由於我們選擇不在**所有中文頁**以及**英文封面頁**插入DOI碼，因此將（**雙面印刷**）起始頁設為11（若是**單面列印**則起始頁應為6）：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/4_2.png)
 
 ### 保全設定
+* 台大規定需將PDF檔加上限制編輯、允許高解析度列印的保全措施。
+
+以下示範如何透過使用**Adobe Acrobat Pro**設定保全。首先，選擇右邊選單之**Encrypt**：
+![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/5_1.png)
+
+接著依照圖示設定保全項目：
+![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/5_2.png)
+
+最後記得**存檔**再離開。
