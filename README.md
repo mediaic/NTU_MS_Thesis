@@ -23,7 +23,7 @@
 
 以下示範如何透過使用**Adobe Acrobat Pro**插入其他PDF檔與空白頁。首先，選擇右邊選單之**Organize Pages**：
 
-<img src="https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/2_1.png" width="50">
+<img src="https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/2_1.png" width="965">
 
 接著插入其他PDF檔案：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/2_2.png)
