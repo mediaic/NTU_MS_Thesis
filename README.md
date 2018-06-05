@@ -49,8 +49,11 @@
 請先登入台大之「[電子學位論文服務系統](http://etds.lib.ntu.edu.tw/etdsystem/submit/submitLogin)」，並在**輸入論文基本資料**之網頁**複製**論文的DOI碼：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/4_1.png)
 
-之後使用**Adobe Acrobat Pro**插入DOI碼。請注意，由於我們選擇不在**所有中文頁**以及**英文封面頁**插入DOI碼，因此將（**雙面印刷**）起始頁設為11（若是**單面列印**則起始頁應為6）：
+之後使用**Adobe Acrobat Pro**插入DOI碼。選擇右邊選單之**Watermark**：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/4_2.png)
+
+請注意，由於我們選擇不在**所有中文頁**以及**英文封面頁**插入DOI碼，因此將（**雙面印刷**）起始頁設為11（若是**單面列印**則起始頁應為6）：
+![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/4_3.png)
 
 ### 保全設定
 * 台大規定需將PDF檔加上限制編輯、允許高解析度列印的保全措施。
