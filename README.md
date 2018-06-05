@@ -22,7 +22,7 @@
 * 若論文總頁數在80頁以下，則建議使用**單面印刷**。在此情況下**不需要另外加入空白頁**，並將**thesis.tex**第一行之**twoside**以**oneside**置換。
 
 以下示範如何透過使用**Adobe Acrobat Pro**插入其他PDF檔與空白頁。首先，選擇右邊選單之**Organize Pages**：
-![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/2_1.png | width=50)
+<img src="https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/2_1.png" width="50">
 
 接著插入其他PDF檔案：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/2_2.png)
