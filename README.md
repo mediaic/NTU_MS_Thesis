@@ -40,7 +40,7 @@
 以下示範如何透過使用**Adobe Acrobat Pro**插入校徽浮水印。首先，選擇右邊選單之**Watermark**：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/3_1.png)
 
-請注意，這邊將不透明度調整為30%，其他均依照學校規定：
+接著依照以下設定（配合本文提供的校徽向量檔）：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/3_2.png)
 
 ### 數位物件識別碼
