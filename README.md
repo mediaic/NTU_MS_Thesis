@@ -52,7 +52,7 @@
 之後使用**Adobe Acrobat Pro**插入DOI碼。選擇右邊選單之**Watermark**：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/4_2.png)
 
-請注意，由於我們選擇不在**所有中文頁**以及**英文封面頁**插入DOI碼，因此將（**雙面印刷**）起始頁設為11（若是**單面列印**則起始頁應為6）：
+接著依照以下設定：
 ![](https://raw.githubusercontent.com/mediaic/NTU_MS_Thesis/master/image/4_3.png)
 
 ### 保全設定
